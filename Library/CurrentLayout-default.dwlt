@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 37
+  controlID: 103
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -316,21 +316,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\ANDROID BUILDS\XR5G_VR\XR5G_AR
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7a3c0000
-    m_LastClickedID: 15482
+    m_SelectedIDs: 8c3c0000
+    m_LastClickedID: 15500
     m_ExpandedIDs: 000000007a3c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -670,8 +670,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -677.5
     m_HBaseRangeMax: 677.5
-    m_VBaseRangeMin: -345.5
-    m_VBaseRangeMax: 345.5
+    m_VBaseRangeMin: -335
+    m_VBaseRangeMax: 335
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -688,11 +688,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 0
+      y: 21
       width: 1355
-      height: 691
+      height: 670
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 677.5, y: 345.5}
+    m_Translation: {x: 677.5, y: 335}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -700,9 +700,9 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -677.5
-      y: -345.5
+      y: -335
       width: 1355
-      height: 691
+      height: 670
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1355, y: 691}

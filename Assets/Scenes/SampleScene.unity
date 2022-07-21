@@ -131,7 +131,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 678954973}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.39801025, y: -0.6166992, z: -6.1345215}
+  m_LocalPosition: {x: -1.06, y: -0.6166992, z: -6.04}
   m_LocalScale: {x: 2.6245, y: 2.6245, z: 2.6245}
   m_Children:
   - {fileID: 1775954863}
@@ -394,7 +394,7 @@ MonoBehaviour:
   targetObject: {fileID: 81693452}
   boundsOverride: {fileID: 0}
   boundsCalculationMethod: 0
-  activation: 0
+  activation: 2
   flattenAxis: 0
   uniformScaleOnFlattenedAxis: 1
   boxPadding: {x: 0, y: 0, z: 0}
@@ -579,7 +579,7 @@ GameObject:
   - component: {fileID: 280637846}
   - component: {fileID: 280637847}
   - component: {fileID: 280637848}
-  - component: {fileID: 280637849}
+  - component: {fileID: 280637850}
   m_Layer: 0
   m_Name: mesh_0
   m_TagString: Untagged
@@ -665,7 +665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 280637841}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -682,7 +682,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 81693456}
+  constraintsManager: {fileID: 280637844}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -776,7 +776,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 1
---- !u!114 &280637848
+--- !u!65 &280637848
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280637840}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.019999994, y: 0.019999979, z: 0.018694237}
+  m_Center: {x: 0.00000008612788, y: -0.0000000032571963, z: -0.00065270247}
+--- !u!114 &280637850
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -788,7 +801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 81693452}
+  targetObject: {fileID: 280637840}
   boundsOverride: {fileID: 0}
   boundsCalculationMethod: 0
   activation: 0
@@ -807,7 +820,7 @@ MonoBehaviour:
   scaleLerpTime: 0.001
   translateLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 81693456}
+  constraintsManager: {fileID: 280637844}
   rotateStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -827,20 +840,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   elasticsManager: {fileID: 0}
---- !u!114 &280637849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280637840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5afd5316c63705643b3daba5a6e923bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowTetherWhenManipulating: 0
-  IsBoundsHandles: 0
 --- !u!1 &316787511
 GameObject:
   m_ObjectHideFlags: 0
@@ -889,8 +888,8 @@ GameObject:
   - component: {fileID: 467451647}
   - component: {fileID: 467451650}
   - component: {fileID: 467451651}
-  - component: {fileID: 467451652}
   - component: {fileID: 467451653}
+  - component: {fileID: 467451652}
   m_Layer: 0
   m_Name: Object_6
   m_TagString: Untagged
@@ -990,7 +989,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 81693456}
+  constraintsManager: {fileID: 467451648}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -1084,7 +1083,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 1
---- !u!114 &467451652
+--- !u!65 &467451652
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467451643}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.019744622, y: 0.01974461, z: 0.02197764}
+  m_Center: {x: 0.000000026542693, y: -0.0000000018588711, z: 0.0010132324}
+--- !u!114 &467451653
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1096,10 +1108,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 81693452}
+  targetObject: {fileID: 467451643}
   boundsOverride: {fileID: 0}
   boundsCalculationMethod: 0
-  activation: 0
+  activation: 2
   flattenAxis: 0
   uniformScaleOnFlattenedAxis: 1
   boxPadding: {x: 0, y: 0, z: 0}
@@ -1115,7 +1127,7 @@ MonoBehaviour:
   scaleLerpTime: 0.001
   translateLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 81693456}
+  constraintsManager: {fileID: 467451648}
   rotateStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -1135,20 +1147,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   elasticsManager: {fileID: 0}
---- !u!114 &467451653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 467451643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5afd5316c63705643b3daba5a6e923bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowTetherWhenManipulating: 0
-  IsBoundsHandles: 0
 --- !u!4 &470470729
 Transform:
   m_ObjectHideFlags: 0
@@ -1240,6 +1238,28 @@ Transform:
   m_Father: {fileID: 1049673542}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &560817932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0d3e2fcd636d0243820f1bebf6e167b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handleMaterial: {fileID: 0}
+  handleGrabbedMaterial: {fileID: 0}
+  handlePrefab: {fileID: 0}
+  handleSize: 0.016
+  colliderPadding: {x: 0.016, y: 0.016, z: 0.016}
+  drawTetherWhenManipulating: 1
+  handlesIgnoreCollider: {fileID: 0}
+  handleSlatePrefab: {fileID: 0}
+  showScaleHandles: 1
+  scaleBehavior: 0
 --- !u!4 &659854424
 Transform:
   m_ObjectHideFlags: 0
@@ -1435,6 +1455,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brain
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a6b4db8d36f4a784a93e75479acebd9b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: a6b4db8d36f4a784a93e75479acebd9b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.599
@@ -1470,8 +1494,8 @@ GameObject:
   - component: {fileID: 766954388}
   - component: {fileID: 766954391}
   - component: {fileID: 766954392}
-  - component: {fileID: 766954393}
   - component: {fileID: 766954394}
+  - component: {fileID: 766954393}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -1571,7 +1595,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 81693456}
+  constraintsManager: {fileID: 766954389}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -1665,7 +1689,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 1
---- !u!114 &766954393
+--- !u!65 &766954393
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766954384}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 226.77127, y: 305.09302, z: 204.827}
+  m_Center: {x: 1.4076656, y: 0.8062973, z: 0.18535623}
+--- !u!114 &766954394
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1677,10 +1714,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 81693452}
+  targetObject: {fileID: 766954384}
   boundsOverride: {fileID: 0}
   boundsCalculationMethod: 0
-  activation: 0
+  activation: 2
   flattenAxis: 0
   uniformScaleOnFlattenedAxis: 1
   boxPadding: {x: 0, y: 0, z: 0}
@@ -1696,7 +1733,7 @@ MonoBehaviour:
   scaleLerpTime: 0.001
   translateLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 81693456}
+  constraintsManager: {fileID: 766954389}
   rotateStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -1716,20 +1753,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   elasticsManager: {fileID: 0}
---- !u!114 &766954394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 766954384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5afd5316c63705643b3daba5a6e923bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowTetherWhenManipulating: 0
-  IsBoundsHandles: 0
 --- !u!1 &784475750
 GameObject:
   m_ObjectHideFlags: 0
@@ -1742,12 +1765,12 @@ GameObject:
   - component: {fileID: 784475753}
   - component: {fileID: 784475752}
   - component: {fileID: 784475756}
+  - component: {fileID: 784475761}
   - component: {fileID: 784475755}
   - component: {fileID: 784475754}
   - component: {fileID: 784475757}
   - component: {fileID: 784475758}
   - component: {fileID: 784475759}
-  - component: {fileID: 784475760}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -1847,7 +1870,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 81693456}
+  constraintsManager: {fileID: 784475755}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -1953,16 +1976,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 81693452}
+  targetObject: {fileID: 784475750}
   boundsOverride: {fileID: 0}
   boundsCalculationMethod: 0
-  activation: 0
+  activation: 3
   flattenAxis: 0
   uniformScaleOnFlattenedAxis: 1
   boxPadding: {x: 0, y: 0, z: 0}
-  boxDisplayConfiguration: {fileID: 0}
+  boxDisplayConfiguration: {fileID: 1382814831}
   linksConfiguration: {fileID: 0}
-  scaleHandlesConfiguration: {fileID: 0}
+  scaleHandlesConfiguration: {fileID: 560817932}
   rotationHandlesConfiguration: {fileID: 0}
   translationHandlesConfiguration: {fileID: 0}
   handleProximityEffectConfiguration: {fileID: 0}
@@ -1972,7 +1995,7 @@ MonoBehaviour:
   scaleLerpTime: 0.001
   translateLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 81693456}
+  constraintsManager: {fileID: 784475755}
   rotateStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -1992,20 +2015,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   elasticsManager: {fileID: 0}
---- !u!114 &784475760
-MonoBehaviour:
+--- !u!65 &784475761
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784475750}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5afd5316c63705643b3daba5a6e923bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowTetherWhenManipulating: 0
-  IsBoundsHandles: 0
+  serializedVersion: 2
+  m_Size: {x: 22.579376, y: 67.72093, z: 14.800284}
+  m_Center: {x: -0.004610056, y: 24.038168, z: 0.05646175}
 --- !u!1 &795106856
 GameObject:
   m_ObjectHideFlags: 0
@@ -2037,11 +2059,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &807391349 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4983009381304104, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-  m_PrefabInstance: {fileID: 968547161}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &830728445
 GameObject:
   m_ObjectHideFlags: 0
@@ -2117,11 +2134,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830728445}
   m_CullTransparentMesh: 1
---- !u!1 &934727573 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1083549605185280, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-  m_PrefabInstance: {fileID: 968547161}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &943035664
 GameObject:
   m_ObjectHideFlags: 0
@@ -2138,91 +2150,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1001 &968547161
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1083549605185280, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-      propertyPath: m_Name
-      value: Simple Line ToolTip
-      objectReference: {fileID: 0}
-    - target: {fileID: 1486990241750050, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4510122080978026, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4510122080978026, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4510122080978026, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4510122080978026, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4510122080978026, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4510122080978026, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4510122080978026, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4510122080978026, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4510122080978026, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4510122080978026, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4510122080978026, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4892726138630008, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.15336993
-      objectReference: {fileID: 0}
-    - target: {fileID: 120256979407580908, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 120256979407580908, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-      propertyPath: m_Positions.Array.data[1].y
-      value: 0.21504645
-      objectReference: {fileID: 0}
-    - target: {fileID: 7446970764068212843, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-      propertyPath: m_textAlignment
-      value: 65535
-      objectReference: {fileID: 0}
-    - target: {fileID: 7446970764068212843, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-      propertyPath: m_VerticalAlignment
-      value: 512
-      objectReference: {fileID: 0}
-    - target: {fileID: 7446970764068212843, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 32
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: afaef0108a478c44a9eac26658bc29bf, type: 3}
 --- !u!1 &1049673541
 GameObject:
   m_ObjectHideFlags: 0
@@ -2506,7 +2433,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1306051961
 Transform:
   m_ObjectHideFlags: 0
@@ -2527,6 +2454,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -8.143, z: 0}
+--- !u!114 &1382814831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 240d9483db94993408ff1d02335ea212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxMaterial: {fileID: 0}
+  boxGrabbedMaterial: {fileID: 0}
+  flattenAxisDisplayScale: 0
 --- !u!4 &1392297119
 Transform:
   m_ObjectHideFlags: 0
@@ -2712,7 +2654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   focusEnabled: 1
-  prefab: {fileID: 934727573}
+  prefab: {fileID: 0}
   tooltipToggleAction:
     id: 0
     description: None
@@ -2737,20 +2679,19 @@ MonoBehaviour:
   pivotDistance: 0.25
   toolTipText: Brain
   anchor: {fileID: 0}
---- !u!114 &1697305238
-MonoBehaviour:
+--- !u!65 &1697305238
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697305229}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5afd5316c63705643b3daba5a6e923bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowTetherWhenManipulating: 0
-  IsBoundsHandles: 0
+  serializedVersion: 2
+  m_Size: {x: 0.1665931, y: 0.166376, z: 0.17486809}
+  m_Center: {x: 0.041190047, y: 0.000000059604645, z: 0.017023487}
 --- !u!114 &1697305239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2760,11 +2701,48 @@ MonoBehaviour:
   m_GameObject: {fileID: 1697305229}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5afd5316c63705643b3daba5a6e923bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShowTetherWhenManipulating: 0
-  IsBoundsHandles: 0
+  targetObject: {fileID: 1697305229}
+  boundsOverride: {fileID: 0}
+  boundsCalculationMethod: 0
+  activation: 2
+  flattenAxis: 0
+  uniformScaleOnFlattenedAxis: 1
+  boxPadding: {x: 0, y: 0, z: 0}
+  boxDisplayConfiguration: {fileID: 0}
+  linksConfiguration: {fileID: 0}
+  scaleHandlesConfiguration: {fileID: 0}
+  rotationHandlesConfiguration: {fileID: 0}
+  translationHandlesConfiguration: {fileID: 0}
+  handleProximityEffectConfiguration: {fileID: 0}
+  hideElementsInInspector: 1
+  smoothingActive: 0
+  rotateLerpTime: 0.001
+  scaleLerpTime: 0.001
+  translateLerpTime: 0.001
+  enableConstraints: 1
+  constraintsManager: {fileID: 1697305233}
+  rotateStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  rotateStopped:
+    m_PersistentCalls:
+      m_Calls: []
+  scaleStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  scaleStopped:
+    m_PersistentCalls:
+      m_Calls: []
+  translateStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  translateStopped:
+    m_PersistentCalls:
+      m_Calls: []
+  elasticsManager: {fileID: 0}
 --- !u!1 &1775954862
 GameObject:
   m_ObjectHideFlags: 0
@@ -2781,8 +2759,8 @@ GameObject:
   - component: {fileID: 1775954866}
   - component: {fileID: 1775954869}
   - component: {fileID: 1775954870}
-  - component: {fileID: 1775954871}
   - component: {fileID: 1775954872}
+  - component: {fileID: 1775954871}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -2798,7 +2776,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775954862}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.287, y: -0.001, z: 2.008}
+  m_LocalPosition: {x: 0.02, y: -0.001, z: 2.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 46512469}
@@ -2882,7 +2860,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 81693456}
+  constraintsManager: {fileID: 1775954867}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -2975,8 +2953,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
-  IsBoundsHandles: 1
---- !u!114 &1775954871
+  IsBoundsHandles: 0
+--- !u!65 &1775954871
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775954862}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.124758, y: 3.496795, z: 0.562763}
+  m_Center: {x: 0.004666984, y: -0.4969656, z: -0.0046267956}
+--- !u!114 &1775954872
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2988,10 +2979,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 81693452}
+  targetObject: {fileID: 1775954862}
   boundsOverride: {fileID: 0}
   boundsCalculationMethod: 0
-  activation: 0
+  activation: 2
   flattenAxis: 0
   uniformScaleOnFlattenedAxis: 1
   boxPadding: {x: 0, y: 0, z: 0}
@@ -3007,7 +2998,7 @@ MonoBehaviour:
   scaleLerpTime: 0.001
   translateLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 81693456}
+  constraintsManager: {fileID: 1775954867}
   rotateStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -3027,20 +3018,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   elasticsManager: {fileID: 0}
---- !u!114 &1775954872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1775954862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5afd5316c63705643b3daba5a6e923bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowTetherWhenManipulating: 0
-  IsBoundsHandles: 0
 --- !u!1 &1984275885
 GameObject:
   m_ObjectHideFlags: 0
@@ -3292,8 +3269,8 @@ GameObject:
   - component: {fileID: 2135398965}
   - component: {fileID: 2135398968}
   - component: {fileID: 2135398969}
-  - component: {fileID: 2135398970}
   - component: {fileID: 2135398971}
+  - component: {fileID: 2135398970}
   m_Layer: 0
   m_Name: Object_6
   m_TagString: Untagged
@@ -3393,7 +3370,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 81693456}
+  constraintsManager: {fileID: 2135398966}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -3487,7 +3464,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 1
---- !u!114 &2135398970
+--- !u!65 &2135398970
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135398961}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.019744622, y: 0.019744623, z: 0.021977644}
+  m_Center: {x: 0.00000011594966, y: -0.00000006142201, z: 0.0010132921}
+--- !u!114 &2135398971
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3499,10 +3489,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 81693452}
+  targetObject: {fileID: 2135398961}
   boundsOverride: {fileID: 0}
   boundsCalculationMethod: 0
-  activation: 0
+  activation: 2
   flattenAxis: 0
   uniformScaleOnFlattenedAxis: 1
   boxPadding: {x: 0, y: 0, z: 0}
@@ -3518,7 +3508,7 @@ MonoBehaviour:
   scaleLerpTime: 0.001
   translateLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 81693456}
+  constraintsManager: {fileID: 2135398966}
   rotateStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -3538,20 +3528,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   elasticsManager: {fileID: 0}
---- !u!114 &2135398971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2135398961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5afd5316c63705643b3daba5a6e923bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowTetherWhenManipulating: 0
-  IsBoundsHandles: 0
 --- !u!4 &22610526990329035
 Transform:
   m_ObjectHideFlags: 0
@@ -3575,7 +3551,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5801383017312211998}
-  - component: {fileID: 24472316667537856}
   m_Layer: 0
   m_Name: ID223
   m_TagString: Untagged
@@ -3583,20 +3558,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &24472316667537856
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 24472316667537855}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!4 &73638021409144683
 Transform:
   m_ObjectHideFlags: 0
@@ -3680,7 +3641,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2601270131706552120}
-  - component: {fileID: 591446848184213327}
   m_Layer: 0
   m_Name: ID127
   m_TagString: Untagged
@@ -3688,20 +3648,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &591446848184213327
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 591446848184213326}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!4 &661584518259704366
 Transform:
   m_ObjectHideFlags: 0
@@ -3794,7 +3740,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1459219333661795326}
-  - component: {fileID: 834399200186816719}
   m_Layer: 0
   m_Name: ID183
   m_TagString: Untagged
@@ -3802,20 +3747,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &834399200186816719
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 834399200186816718}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &850541208035207968
 GameObject:
   m_ObjectHideFlags: 0
@@ -3902,7 +3833,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2156851370621865449}
-  - component: {fileID: 978714595181837190}
   m_Layer: 0
   m_Name: ID179
   m_TagString: Untagged
@@ -3910,20 +3840,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &978714595181837190
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 978714595181837189}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!4 &1017523182428340036
 Transform:
   m_ObjectHideFlags: 0
@@ -3963,7 +3879,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4914391119597402430}
-  - component: {fileID: 1042918923539687506}
   m_Layer: 0
   m_Name: ID203
   m_TagString: Untagged
@@ -3971,20 +3886,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &1042918923539687506
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1042918923539687505}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!4 &1047837770351349776
 Transform:
   m_ObjectHideFlags: 0
@@ -4038,7 +3939,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 921114860083978477}
-  - component: {fileID: 1266580916240994462}
   m_Layer: 0
   m_Name: ID239
   m_TagString: Untagged
@@ -4046,20 +3946,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &1266580916240994462
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1266580916240994461}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!23 &1281281016112941192
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4110,7 +3996,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 661584518259704366}
-  - component: {fileID: 1301344339114338924}
   m_Layer: 0
   m_Name: ID71
   m_TagString: Untagged
@@ -4118,20 +4003,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &1301344339114338924
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1301344339114338923}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &1401677351932381746
 GameObject:
   m_ObjectHideFlags: 0
@@ -4284,6 +4155,7 @@ GameObject:
   - component: {fileID: 1607920330788102614}
   - component: {fileID: 1607920330788102613}
   - component: {fileID: 1607920330788102616}
+  - component: {fileID: 1607920330788102617}
   m_Layer: 0
   m_Name: pitua
   m_TagString: Untagged
@@ -4384,37 +4256,13 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
   onHoverEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onHoverExited:
     m_PersistentCalls:
       m_Calls: []
@@ -4468,7 +4316,7 @@ MonoBehaviour:
   manualPivotDirection: {x: 0, y: 1, z: 0}
   manualPivotLocalPosition: {x: 0, y: 1, z: 0}
   pivotDistance: 0.25
-  toolTipText: PIYUA GLAND
+  toolTipText: PITUA GLAND
   anchor: {fileID: 0}
 --- !u!114 &1607920330788102614
 MonoBehaviour:
@@ -4539,7 +4387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 81693452}
+  targetObject: {fileID: 1607920330788102607}
   boundsOverride: {fileID: 0}
   boundsCalculationMethod: 0
   activation: 0
@@ -4558,7 +4406,7 @@ MonoBehaviour:
   scaleLerpTime: 0.001
   translateLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 81693456}
+  constraintsManager: {fileID: 1607920330788102608}
   rotateStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -4578,6 +4426,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   elasticsManager: {fileID: 0}
+--- !u!65 &1607920330788102617
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607920330788102607}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.483985, y: 0.70140016, z: 0.45414513}
+  m_Center: {x: -0.63880646, y: 0.104923025, z: 0.23707545}
 --- !u!1 &1663597142989084193
 GameObject:
   m_ObjectHideFlags: 0
@@ -4587,7 +4448,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 741993401300759979}
-  - component: {fileID: 1663597142989084194}
   m_Layer: 0
   m_Name: ID255
   m_TagString: Untagged
@@ -4595,20 +4455,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &1663597142989084194
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663597142989084193}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!23 &1666990113059992100
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4700,7 +4546,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 564299757852121217}
-  - component: {fileID: 1891385673099673221}
   m_Layer: 0
   m_Name: ID187
   m_TagString: Untagged
@@ -4708,20 +4553,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &1891385673099673221
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1891385673099673220}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!4 &1943433078580405245
 Transform:
   m_ObjectHideFlags: 0
@@ -4808,7 +4639,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3613972196503709178}
-  - component: {fileID: 2269991196700765406}
   m_Layer: 0
   m_Name: ID235
   m_TagString: Untagged
@@ -4816,20 +4646,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &2269991196700765406
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2269991196700765405}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!4 &2308577104601866748
 Transform:
   m_ObjectHideFlags: 0
@@ -4853,7 +4669,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1508229867094933414}
-  - component: {fileID: 2364268552030716716}
   m_Layer: 0
   m_Name: ID207
   m_TagString: Untagged
@@ -4861,20 +4676,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &2364268552030716716
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2364268552030716715}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &2383571514863417536
 GameObject:
   m_ObjectHideFlags: 0
@@ -5031,7 +4832,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1457303772753174048}
-  - component: {fileID: 2741308767790464707}
   m_Layer: 0
   m_Name: ID211
   m_TagString: Untagged
@@ -5039,20 +4839,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &2741308767790464707
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2741308767790464706}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!4 &2833616904038704836
 Transform:
   m_ObjectHideFlags: 0
@@ -5076,7 +4862,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 22610526990329035}
-  - component: {fileID: 2925869275794726586}
   m_Layer: 0
   m_Name: ID243
   m_TagString: Untagged
@@ -5084,20 +4869,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &2925869275794726586
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2925869275794726585}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &2987389132151260479
 GameObject:
   m_ObjectHideFlags: 0
@@ -5107,7 +4878,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6964931654357792592}
-  - component: {fileID: 2987389132151260480}
   m_Layer: 0
   m_Name: ID79
   m_TagString: Untagged
@@ -5115,20 +4885,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &2987389132151260480
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2987389132151260479}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!4 &3089444372695474930
 Transform:
   m_ObjectHideFlags: 0
@@ -5174,7 +4930,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3773520629373777968}
-  - component: {fileID: 3287866448823382513}
   m_Layer: 0
   m_Name: ID119
   m_TagString: Untagged
@@ -5182,20 +4937,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &3287866448823382513
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3287866448823382512}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &3325664065952737719
 GameObject:
   m_ObjectHideFlags: 0
@@ -5205,7 +4946,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2589434690571804459}
-  - component: {fileID: 3325664065952737720}
   m_Layer: 0
   m_Name: ID247
   m_TagString: Untagged
@@ -5213,20 +4953,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &3325664065952737720
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3325664065952737719}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!23 &3367625891257993601
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5277,7 +5003,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1047837770351349776}
-  - component: {fileID: 3485197579979104128}
   m_Layer: 0
   m_Name: ID251
   m_TagString: Untagged
@@ -5285,20 +5010,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &3485197579979104128
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3485197579979104127}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!4 &3512944174089546199
 Transform:
   m_ObjectHideFlags: 0
@@ -5399,7 +5110,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8140828554866038390}
-  - component: {fileID: 3685722492322195325}
   m_Layer: 0
   m_Name: ID195
   m_TagString: Untagged
@@ -5407,20 +5117,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &3685722492322195325
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3685722492322195324}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &3689729639369504784
 GameObject:
   m_ObjectHideFlags: 0
@@ -5486,6 +5182,7 @@ GameObject:
   - component: {fileID: 3791420713707392119}
   - component: {fileID: 3791420713707392121}
   - component: {fileID: 3791420713707392122}
+  - component: {fileID: 3791420713707392120}
   m_Layer: 0
   m_Name: pariet
   m_TagString: Untagged
@@ -5558,37 +5255,13 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
   onHoverEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onHoverExited:
     m_PersistentCalls:
       m_Calls: []
@@ -5634,6 +5307,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 1
+--- !u!65 &3791420713707392120
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3791420713707392114}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.988718, y: 2.4332273, z: 2.5798428}
+  m_Center: {x: 1.371705, y: -1.2639499, z: 2.5391254}
 --- !u!114 &3791420713707392121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5684,10 +5370,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 81693452}
+  targetObject: {fileID: 3791420713707392114}
   boundsOverride: {fileID: 0}
   boundsCalculationMethod: 0
-  activation: 0
+  activation: 2
   flattenAxis: 0
   uniformScaleOnFlattenedAxis: 1
   boxPadding: {x: 0, y: 0, z: 0}
@@ -5703,7 +5389,7 @@ MonoBehaviour:
   scaleLerpTime: 0.001
   translateLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 81693456}
+  constraintsManager: {fileID: 3791420713707392117}
   rotateStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -5804,6 +5490,7 @@ GameObject:
   - component: {fileID: 3986745009253520175}
   - component: {fileID: 3986745009253520176}
   - component: {fileID: 3986745009253520174}
+  - component: {fileID: 3986745009253520177}
   m_Layer: 0
   m_Name: frontal
   m_TagString: Untagged
@@ -5876,37 +5563,13 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
   onHoverEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onHoverExited:
     m_PersistentCalls:
       m_Calls: []
@@ -6002,10 +5665,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 81693452}
+  targetObject: {fileID: 3986745009253520169}
   boundsOverride: {fileID: 0}
   boundsCalculationMethod: 0
-  activation: 0
+  activation: 2
   flattenAxis: 0
   uniformScaleOnFlattenedAxis: 1
   boxPadding: {x: 0, y: 0, z: 0}
@@ -6021,7 +5684,7 @@ MonoBehaviour:
   scaleLerpTime: 0.001
   translateLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 81693456}
+  constraintsManager: {fileID: 3986745009253520172}
   rotateStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -6041,6 +5704,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   elasticsManager: {fileID: 0}
+--- !u!65 &3986745009253520177
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3986745009253520169}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.8620121, y: 2.4454126, z: 3.3400958}
+  m_Center: {x: -1.126521, y: -1.2370412, z: 2.2581987}
 --- !u!1 &3998028267634590954
 GameObject:
   m_ObjectHideFlags: 0
@@ -6050,7 +5726,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7678650868368446262}
-  - component: {fileID: 3998028267634590955}
   m_Layer: 0
   m_Name: ID215
   m_TagString: Untagged
@@ -6058,20 +5733,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &3998028267634590955
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3998028267634590954}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!33 &4008211006107400406
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6122,7 +5783,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4651610118567736116}
-  - component: {fileID: 4055007767998449465}
   m_Layer: 0
   m_Name: ID159
   m_TagString: Untagged
@@ -6130,20 +5790,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &4055007767998449465
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4055007767998449464}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &4120317232823345964
 GameObject:
   m_ObjectHideFlags: 0
@@ -6153,7 +5799,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 73638021409144683}
-  - component: {fileID: 4120317232823345965}
   m_Layer: 0
   m_Name: ID167
   m_TagString: Untagged
@@ -6161,20 +5806,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &4120317232823345965
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4120317232823345964}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &4128041848621623473
 GameObject:
   m_ObjectHideFlags: 0
@@ -6193,6 +5824,7 @@ GameObject:
   - component: {fileID: 4128041848621623479}
   - component: {fileID: 4128041848621623481}
   - component: {fileID: 4128041848621623480}
+  - component: {fileID: 4128041848621623478}
   m_Layer: 0
   m_Name: stem
   m_TagString: Untagged
@@ -6265,37 +5897,13 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
   onHoverEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onHoverExited:
     m_PersistentCalls:
       m_Calls: []
@@ -6327,6 +5935,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5618422539440301527, guid: eb292ee2c77c8054ea56e293eb02eadb, type: 3}
+--- !u!65 &4128041848621623478
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4128041848621623473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5571098, y: 3.2567978, z: 4.108453}
+  m_Center: {x: -0.092809975, y: 0.1049545, z: 0.36506304}
 --- !u!114 &4128041848621623479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6391,10 +6012,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 81693452}
+  targetObject: {fileID: 4128041848621623473}
   boundsOverride: {fileID: 0}
   boundsCalculationMethod: 0
-  activation: 0
+  activation: 2
   flattenAxis: 0
   uniformScaleOnFlattenedAxis: 1
   boxPadding: {x: 0, y: 0, z: 0}
@@ -6410,7 +6031,7 @@ MonoBehaviour:
   scaleLerpTime: 0.001
   translateLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 81693456}
+  constraintsManager: {fileID: 4128041848621623476}
   rotateStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -6461,7 +6082,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4279531486836294072}
-  - component: {fileID: 4401941846481520718}
   m_Layer: 0
   m_Name: ID65
   m_TagString: Untagged
@@ -6469,20 +6089,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &4401941846481520718
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4401941846481520717}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &4496973753922907572
 GameObject:
   m_ObjectHideFlags: 0
@@ -6492,7 +6098,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1943433078580405245}
-  - component: {fileID: 4496973753922907573}
   m_Layer: 0
   m_Name: ID175
   m_TagString: Untagged
@@ -6500,20 +6105,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &4496973753922907573
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4496973753922907572}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!4 &4651610118567736116
 Transform:
   m_ObjectHideFlags: 0
@@ -6575,7 +6166,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5546409570106378979}
-  - component: {fileID: 4777632295564159695}
   m_Layer: 0
   m_Name: ID219
   m_TagString: Untagged
@@ -6583,20 +6173,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &4777632295564159695
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4777632295564159694}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!4 &4914391119597402430
 Transform:
   m_ObjectHideFlags: 0
@@ -6626,10 +6202,10 @@ GameObject:
   - component: {fileID: 5031097781753824319}
   - component: {fileID: 5031097781753824318}
   - component: {fileID: 5031097781753824317}
-  - component: {fileID: 5031097781753824321}
   - component: {fileID: 5031097781753824322}
   - component: {fileID: 5031097781753824323}
   - component: {fileID: 5031097781753824324}
+  - component: {fileID: 5031097781753824321}
   m_Layer: 0
   m_Name: temp
   m_TagString: Untagged
@@ -6702,37 +6278,13 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
   onHoverEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onHoverExited:
     m_PersistentCalls:
       m_Calls: []
@@ -6764,42 +6316,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8777139954052135742, guid: eb292ee2c77c8054ea56e293eb02eadb, type: 3}
---- !u!114 &5031097781753824321
-MonoBehaviour:
+--- !u!65 &5031097781753824321
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5031097781753824316}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03daa81ea5f685f4ebf6e32038d058ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
-  manipulationType: 2
-  twoHandedManipulationType: 5
-  allowFarManipulation: 1
-  oneHandRotationModeNear: 6
-  oneHandRotationModeFar: 6
-  releaseBehavior: 3
-  constraintOnRotation: 0
-  useLocalSpaceForConstraint: 0
-  constraintOnMovement: 0
-  smoothingActive: 1
-  smoothingAmountOneHandManip: 0.001
-  onManipulationStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onManipulationEnded:
-    m_PersistentCalls:
-      m_Calls: []
-  onHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  onHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
+  serializedVersion: 2
+  m_Size: {x: 0.36287802, y: 0.3188171, z: 0.07800795}
+  m_Center: {x: 0.641387, y: -1.6802279, z: 1.6730843}
 --- !u!114 &5031097781753824322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6850,10 +6379,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 81693452}
+  targetObject: {fileID: 5031097781753824316}
   boundsOverride: {fileID: 0}
   boundsCalculationMethod: 0
-  activation: 0
+  activation: 2
   flattenAxis: 0
   uniformScaleOnFlattenedAxis: 1
   boxPadding: {x: 0, y: 0, z: 0}
@@ -6869,7 +6398,7 @@ MonoBehaviour:
   scaleLerpTime: 0.001
   translateLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 81693456}
+  constraintsManager: {fileID: 5031097781753824319}
   rotateStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -6953,7 +6482,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6665531368482929502}
-  - component: {fileID: 5112664442338341766}
   m_Layer: 0
   m_Name: ID163
   m_TagString: Untagged
@@ -6961,20 +6489,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &5112664442338341766
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5112664442338341765}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &5122947354224945067
 GameObject:
   m_ObjectHideFlags: 0
@@ -6993,6 +6507,7 @@ GameObject:
   - component: {fileID: 5122947354224945073}
   - component: {fileID: 5122947354224945074}
   - component: {fileID: 5122947354224945072}
+  - component: {fileID: 5122947354224945075}
   m_Layer: 0
   m_Name: corpus
   m_TagString: Untagged
@@ -7191,10 +6706,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 81693452}
+  targetObject: {fileID: 5122947354224945067}
   boundsOverride: {fileID: 0}
   boundsCalculationMethod: 0
-  activation: 0
+  activation: 2
   flattenAxis: 0
   uniformScaleOnFlattenedAxis: 1
   boxPadding: {x: 0, y: 0, z: 0}
@@ -7210,7 +6725,7 @@ MonoBehaviour:
   scaleLerpTime: 0.001
   translateLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 81693456}
+  constraintsManager: {fileID: 5122947354224945070}
   rotateStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -7230,6 +6745,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   elasticsManager: {fileID: 0}
+--- !u!65 &5122947354224945075
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5122947354224945067}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.9078488, y: 0.6285532, z: 1.4071642}
+  m_Center: {x: -0.032502472, y: 0.0000035017738, z: 1.8922133}
 --- !u!1 &5188957544460474371
 GameObject:
   m_ObjectHideFlags: 0
@@ -7239,7 +6767,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3512944174089546199}
-  - component: {fileID: 5188957544460474372}
   m_Layer: 0
   m_Name: ID191
   m_TagString: Untagged
@@ -7247,20 +6774,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &5188957544460474372
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5188957544460474371}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &5526455361794252224
 GameObject:
   m_ObjectHideFlags: 0
@@ -7300,7 +6813,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7135925353021710162}
-  - component: {fileID: 5592337688732783413}
   m_Layer: 0
   m_Name: ID231
   m_TagString: Untagged
@@ -7308,20 +6820,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &5592337688732783413
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5592337688732783412}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!4 &5665077196329137629
 Transform:
   m_ObjectHideFlags: 0
@@ -7404,6 +6902,7 @@ GameObject:
   - component: {fileID: 6071650347696147137}
   - component: {fileID: 6071650347696147138}
   - component: {fileID: 6071650347696147136}
+  - component: {fileID: 6071650347696147139}
   m_Layer: 0
   m_Name: occipit
   m_TagString: Untagged
@@ -7476,37 +6975,13 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
   onHoverEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onHoverExited:
     m_PersistentCalls:
       m_Calls: []
@@ -7602,10 +7077,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 81693452}
+  targetObject: {fileID: 6071650347696147131}
   boundsOverride: {fileID: 0}
   boundsCalculationMethod: 0
-  activation: 0
+  activation: 2
   flattenAxis: 0
   uniformScaleOnFlattenedAxis: 1
   boxPadding: {x: 0, y: 0, z: 0}
@@ -7621,7 +7096,7 @@ MonoBehaviour:
   scaleLerpTime: 0.001
   translateLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 81693456}
+  constraintsManager: {fileID: 6071650347696147134}
   rotateStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -7641,6 +7116,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   elasticsManager: {fileID: 0}
+--- !u!65 &6071650347696147139
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6071650347696147131}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.834743, y: 2.4262695, z: 2.4686093}
+  m_Center: {x: 2.4471235, y: -1.2184818, z: 0.9749867}
 --- !u!1 &6168321535915072902
 GameObject:
   m_ObjectHideFlags: 0
@@ -7650,7 +7138,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5904180038355442875}
-  - component: {fileID: 6168321535915072903}
   m_Layer: 0
   m_Name: ID155
   m_TagString: Untagged
@@ -7658,20 +7145,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &6168321535915072903
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6168321535915072902}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!4 &6277139474876100120
 Transform:
   m_ObjectHideFlags: 0
@@ -7734,7 +7207,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2833616904038704836}
-  - component: {fileID: 6461332936254641500}
   m_Layer: 0
   m_Name: ID75
   m_TagString: Untagged
@@ -7742,20 +7214,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &6461332936254641500
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6461332936254641499}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &6475018579988752170
 GameObject:
   m_ObjectHideFlags: 0
@@ -7774,6 +7232,7 @@ GameObject:
   - component: {fileID: 6475018579988752175}
   - component: {fileID: 6475018579988752177}
   - component: {fileID: 6475018579988752178}
+  - component: {fileID: 6475018579988752176}
   m_Layer: 0
   m_Name: cereb
   m_TagString: Untagged
@@ -7898,6 +7357,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 1
+--- !u!65 &6475018579988752176
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6475018579988752170}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.269856, y: 4.244556, z: 1.8458245}
+  m_Center: {x: 1.3537979, y: 0.10497262, z: -0.09197115}
 --- !u!114 &6475018579988752177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7935,7 +7407,7 @@ MonoBehaviour:
   manualPivotLocalPosition: {x: 0.5, y: 3, z: 0}
   pivotDistance: 0.25
   toolTipText: CEREBELLUM
-  anchor: {fileID: 807391349}
+  anchor: {fileID: 0}
 --- !u!114 &6475018579988752178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7948,10 +7420,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 81693452}
+  targetObject: {fileID: 6475018579988752170}
   boundsOverride: {fileID: 0}
   boundsCalculationMethod: 0
-  activation: 0
+  activation: 2
   flattenAxis: 0
   uniformScaleOnFlattenedAxis: 1
   boxPadding: {x: 0, y: 0, z: 0}
@@ -7967,7 +7439,7 @@ MonoBehaviour:
   scaleLerpTime: 0.001
   translateLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 81693456}
+  constraintsManager: {fileID: 6475018579988752173}
   rotateStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -8202,7 +7674,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2308577104601866748}
-  - component: {fileID: 7391809907257973147}
   m_Layer: 0
   m_Name: ID171
   m_TagString: Untagged
@@ -8210,20 +7681,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &7391809907257973147
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7391809907257973146}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!4 &7678650868368446262
 Transform:
   m_ObjectHideFlags: 0
@@ -8247,7 +7704,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 156450410243183981}
-  - component: {fileID: 7721305010710346989}
   m_Layer: 0
   m_Name: ID123
   m_TagString: Untagged
@@ -8255,20 +7711,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &7721305010710346989
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7721305010710346988}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &7740928837561952919
 GameObject:
   m_ObjectHideFlags: 0
@@ -8278,7 +7720,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4763461712599331217}
-  - component: {fileID: 7740928837561952920}
   m_Layer: 0
   m_Name: ID199
   m_TagString: Untagged
@@ -8286,20 +7727,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &7740928837561952920
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7740928837561952919}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &7797321822671986616
 GameObject:
   m_ObjectHideFlags: 0
@@ -8506,9 +7933,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8859547456181497736}
-  - component: {fileID: 8194510440040609077}
-  - component: {fileID: 8194510440040609076}
-  - component: {fileID: 8194510440040609075}
   m_Layer: 0
   m_Name: brain
   m_TagString: Untagged
@@ -8516,84 +7940,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8194510440040609075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8194510440040609074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetObject: {fileID: 0}
-  boundsOverride: {fileID: 0}
-  boundsCalculationMethod: 0
-  activation: 0
-  flattenAxis: 0
-  uniformScaleOnFlattenedAxis: 1
-  boxPadding: {x: 0, y: 0, z: 0}
-  boxDisplayConfiguration: {fileID: 0}
-  linksConfiguration: {fileID: 0}
-  scaleHandlesConfiguration: {fileID: 0}
-  rotationHandlesConfiguration: {fileID: 0}
-  translationHandlesConfiguration: {fileID: 0}
-  handleProximityEffectConfiguration: {fileID: 0}
-  hideElementsInInspector: 1
-  smoothingActive: 0
-  rotateLerpTime: 0.001
-  scaleLerpTime: 0.001
-  translateLerpTime: 0.001
-  enableConstraints: 1
-  constraintsManager: {fileID: 0}
-  rotateStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  rotateStopped:
-    m_PersistentCalls:
-      m_Calls: []
-  scaleStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  scaleStopped:
-    m_PersistentCalls:
-      m_Calls: []
-  translateStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  translateStopped:
-    m_PersistentCalls:
-      m_Calls: []
-  elasticsManager: {fileID: 0}
---- !u!114 &8194510440040609076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8194510440040609074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a98de877dee5fc341b4eb59dfdab266c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoConstraintSelection: 1
-  selectedConstraints: []
---- !u!65 &8194510440040609077
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8194510440040609074}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &8202996043174986435
 Transform:
   m_ObjectHideFlags: 0
@@ -8677,7 +8023,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3670948302683490629}
-  - component: {fileID: 8605186579778868502}
   m_Layer: 0
   m_Name: ID149
   m_TagString: Untagged
@@ -8685,20 +8030,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &8605186579778868502
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8605186579778868501}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &8842611394738549996
 GameObject:
   m_ObjectHideFlags: 0
@@ -8708,7 +8039,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 758365955706452679}
-  - component: {fileID: 8842611394738549997}
   m_Layer: 0
   m_Name: ID227
   m_TagString: Untagged
@@ -8716,20 +8046,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &8842611394738549997
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8842611394738549996}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!4 &8859547456181497736
 Transform:
   m_ObjectHideFlags: 0
@@ -8738,7 +8054,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8194510440040609074}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -3.64, y: -0.99, z: 9.64}
+  m_LocalPosition: {x: -0.97, y: -0.99, z: 9.64}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 927168016476615792}

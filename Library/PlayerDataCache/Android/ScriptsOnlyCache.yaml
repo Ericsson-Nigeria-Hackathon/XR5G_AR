@@ -29,6 +29,19 @@ ScriptsOnlyBuild:
     - Microsoft.MixedReality.Toolkit.Input.WindowsMixedRealityControllerVisualizer
     - Microsoft.MixedReality.Toolkit.Teleport.ParabolicTeleportPointer
     - Microsoft.MixedReality.Toolkit.Teleport.TeleportCursor
+    - Microsoft.MixedReality.Toolkit.UI.Billboard
+    - Microsoft.MixedReality.Toolkit.UI.BoundsControl.BoundsControl
+    - Microsoft.MixedReality.Toolkit.UI.ConstraintManager
+    - Microsoft.MixedReality.Toolkit.UI.Interactable
+    - Microsoft.MixedReality.Toolkit.UI.ManipulationHandler
+    - Microsoft.MixedReality.Toolkit.UI.ObjectManipulator
+    - Microsoft.MixedReality.Toolkit.UI.States
+    - Microsoft.MixedReality.Toolkit.UI.Theme
+    - Microsoft.MixedReality.Toolkit.UI.ToolTip
+    - Microsoft.MixedReality.Toolkit.UI.ToolTipBackgroundMesh
+    - Microsoft.MixedReality.Toolkit.UI.ToolTipConnector
+    - Microsoft.MixedReality.Toolkit.UI.ToolTipLineHighlight
+    - Microsoft.MixedReality.Toolkit.UI.ToolTipSpawner
     Microsoft.MixedReality.Toolkit.Services.InputAnimation.dll:
     - Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile
     Microsoft.MixedReality.Toolkit.Services.InputSimulation.dll:
@@ -36,6 +49,7 @@ ScriptsOnlyBuild:
     Microsoft.MixedReality.Toolkit.Services.InputSystem.dll:
     - Microsoft.MixedReality.Toolkit.Input.GazeProvider
     - Microsoft.MixedReality.Toolkit.Input.MixedRealityInputModule
+    - Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable
     Microsoft.MixedReality.Toolkit.dll:
     - Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundaryVisualizationProfile
     - Microsoft.MixedReality.Toolkit.Diagnostics.MixedRealityDiagnosticsProfile
@@ -65,6 +79,7 @@ ScriptsOnlyBuild:
     - Microsoft.MixedReality.Toolkit.Utilities.MixedRealityLineRenderer
     - Microsoft.MixedReality.Toolkit.Utilities.ParabolaPhysicalLineDataProvider
     - Microsoft.MixedReality.Toolkit.Utilities.ProximityLight
+    - Microsoft.MixedReality.Toolkit.Utilities.RectangleLineDataProvider
     - Microsoft.MixedReality.Toolkit.Utilities.SimpleLineDataProvider
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputSettings
@@ -77,6 +92,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshPro
     Unity.XR.ARCore.Editor.dll:
     - UnityEditor.XR.ARCore.ARCoreSettings
     Unity.XR.ARCore.dll:
@@ -106,11 +122,6 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.OpenXR.Features.Interactions.ValveIndexControllerProfile
     - UnityEngine.XR.OpenXR.OpenXRLoader
     - UnityEngine.XR.OpenXR.OpenXRSettings
-    Unity.XR.WindowsMixedReality.Editor.dll:
-    - UnityEditor.XR.WindowsMR.WindowsMRPackageSettings
-    Unity.XR.WindowsMixedReality.dll:
-    - UnityEngine.XR.WindowsMR.WindowsMRBuildSettings
-    - UnityEngine.XR.WindowsMR.WindowsMRSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -144,6 +155,8 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 49
+      Script: {instanceID: 0}
+    - Class: 64
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
@@ -186,7 +199,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2392}
     - Class: 114
+      Script: {instanceID: 2616}
+    - Class: 114
       Script: {instanceID: 2630}
+    - Class: 114
+      Script: {instanceID: 2634}
+    - Class: 114
+      Script: {instanceID: 2706}
     - Class: 114
       Script: {instanceID: 2712}
     - Class: 114
@@ -206,6 +225,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3194}
     - Class: 114
+      Script: {instanceID: 3208}
+    - Class: 114
       Script: {instanceID: 3286}
     - Class: 114
       Script: {instanceID: 3330}
@@ -213,6 +234,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3384}
     - Class: 114
       Script: {instanceID: 3452}
+    - Class: 114
+      Script: {instanceID: 3500}
     - Class: 114
       Script: {instanceID: 3562}
     - Class: 114
@@ -222,7 +245,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3708}
     - Class: 114
+      Script: {instanceID: 3842}
+    - Class: 114
       Script: {instanceID: 3926}
+    - Class: 114
+      Script: {instanceID: 3974}
+    - Class: 114
+      Script: {instanceID: 4062}
     - Class: 114
       Script: {instanceID: 4064}
     - Class: 114
@@ -242,6 +271,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4930}
     - Class: 114
+      Script: {instanceID: 4970}
+    - Class: 114
       Script: {instanceID: 5036}
     - Class: 114
       Script: {instanceID: 5042}
@@ -254,6 +285,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5800}
     - Class: 114
+      Script: {instanceID: 5822}
+    - Class: 114
       Script: {instanceID: 5910}
     - Class: 114
       Script: {instanceID: 5922}
@@ -264,9 +297,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6120}
     - Class: 114
+      Script: {instanceID: 6186}
+    - Class: 114
       Script: {instanceID: 6204}
     - Class: 114
       Script: {instanceID: 6332}
+    - Class: 114
+      Script: {instanceID: 6394}
+    - Class: 114
+      Script: {instanceID: 6610}
     - Class: 114
       Script: {instanceID: 6614}
     - Class: 114
@@ -292,9 +331,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 8238}
     - Class: 114
+      Script: {instanceID: 8354}
+    - Class: 114
       Script: {instanceID: 8690}
     - Class: 114
       Script: {instanceID: 8736}
+    - Class: 114
+      Script: {instanceID: 9184}
+    - Class: 114
+      Script: {instanceID: 9188}
     - Class: 114
       Script: {instanceID: 9210}
     - Class: 114

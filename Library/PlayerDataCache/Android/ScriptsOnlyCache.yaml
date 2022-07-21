@@ -3,24 +3,40 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - UniHumanoid.HumanPoseClip
     - script
+    Microsoft.MixedReality.Toolkit.Editor.Inspectors.dll:
+    - Microsoft.MixedReality.Toolkit.Boundary.Editor.MixedRealityBoundaryVisualizationProfileInspector
+    - Microsoft.MixedReality.Toolkit.Diagnostics.Editor.MixedRealityDiagnosticsSystemProfileInspector
+    - Microsoft.MixedReality.Toolkit.Editor.MixedRealityRegisteredServiceProviderProfileInspector
+    - Microsoft.MixedReality.Toolkit.Editor.MixedRealityToolkitConfigurationProfileInspector
+    - Microsoft.MixedReality.Toolkit.Editor.SpatialAwareness.MixedRealitySpatialAwarenessMeshObserverProfileInspector
+    - Microsoft.MixedReality.Toolkit.SpatialAwareness.Editor.MixedRealitySpatialAwarenessSystemProfileInspector
     Microsoft.MixedReality.Toolkit.Editor.Utilities.dll:
     - Microsoft.MixedReality.Toolkit.Utilities.Editor.ProjectPreferences
+    Microsoft.MixedReality.Toolkit.Providers.LeapMotion.dll:
+    - Microsoft.MixedReality.Toolkit.LeapMotion.Input.LeapMotionDeviceManagerProfile
+    Microsoft.MixedReality.Toolkit.Providers.ObjectMeshObserver.dll:
+    - Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserverProfile
     Microsoft.MixedReality.Toolkit.Providers.OpenXR.dll:
     - Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRCameraSettingsProfile
     Microsoft.MixedReality.Toolkit.Providers.UnityAR.dll:
     - Microsoft.MixedReality.Toolkit.Experimental.UnityAR.UnityARCameraSettingsProfile
     Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality.Shared.dll:
     - Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityCameraSettingsProfile
+    Microsoft.MixedReality.Toolkit.Providers.WindowsSceneUnderstanding.dll:
+    - Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.SceneUnderstandingObserverProfile
     Microsoft.MixedReality.Toolkit.Providers.XRSDK.Oculus.dll:
     - Microsoft.MixedReality.Toolkit.XRSDK.Oculus.Input.OculusXRSDKDeviceManagerProfile
     Microsoft.MixedReality.Toolkit.SDK.dll:
     - Microsoft.MixedReality.Toolkit.Input.AnimatedCursor
+    - Microsoft.MixedReality.Toolkit.Input.BaseCursor
     - Microsoft.MixedReality.Toolkit.Input.FingerCursor
     - Microsoft.MixedReality.Toolkit.Input.GGVPointer
     - Microsoft.MixedReality.Toolkit.Input.MeshCursor
+    - Microsoft.MixedReality.Toolkit.Input.MixedRealityControllerVisualizer
     - Microsoft.MixedReality.Toolkit.Input.MousePointer
     - Microsoft.MixedReality.Toolkit.Input.PokePointer
     - Microsoft.MixedReality.Toolkit.Input.RiggedHandVisualizer
+    - Microsoft.MixedReality.Toolkit.Input.ScreenSpaceMousePointer
     - Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer
     - Microsoft.MixedReality.Toolkit.Input.SpherePointer
     - Microsoft.MixedReality.Toolkit.Input.SpherePointerGrabPoint
@@ -31,10 +47,12 @@ ScriptsOnlyBuild:
     - Microsoft.MixedReality.Toolkit.Teleport.TeleportCursor
     - Microsoft.MixedReality.Toolkit.UI.Billboard
     - Microsoft.MixedReality.Toolkit.UI.BoundsControl.BoundsControl
+    - Microsoft.MixedReality.Toolkit.UI.BoundsControl.BoxDisplayConfiguration
+    - Microsoft.MixedReality.Toolkit.UI.BoundsControl.ScaleHandlesConfiguration
     - Microsoft.MixedReality.Toolkit.UI.ConstraintManager
     - Microsoft.MixedReality.Toolkit.UI.Interactable
-    - Microsoft.MixedReality.Toolkit.UI.ManipulationHandler
     - Microsoft.MixedReality.Toolkit.UI.ObjectManipulator
+    - Microsoft.MixedReality.Toolkit.UI.PulseShader.PulseShaderSpatialMeshHandler
     - Microsoft.MixedReality.Toolkit.UI.States
     - Microsoft.MixedReality.Toolkit.UI.Theme
     - Microsoft.MixedReality.Toolkit.UI.ToolTip
@@ -56,11 +74,13 @@ ScriptsOnlyBuild:
     - Microsoft.MixedReality.Toolkit.Input.BaseHandVisualizer
     - Microsoft.MixedReality.Toolkit.Input.MixedRealityControllerMappingProfile
     - Microsoft.MixedReality.Toolkit.Input.MixedRealityControllerVisualizationProfile
+    - Microsoft.MixedReality.Toolkit.Input.MixedRealityEyeTrackingProfile
     - Microsoft.MixedReality.Toolkit.Input.MixedRealityGesturesProfile
     - Microsoft.MixedReality.Toolkit.Input.MixedRealityHandTrackingProfile
     - Microsoft.MixedReality.Toolkit.Input.MixedRealityInputActionRulesProfile
     - Microsoft.MixedReality.Toolkit.Input.MixedRealityInputActionsProfile
     - Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSystemProfile
+    - Microsoft.MixedReality.Toolkit.Input.MixedRealityMouseInputProfile
     - Microsoft.MixedReality.Toolkit.Input.MixedRealityPointerProfile
     - Microsoft.MixedReality.Toolkit.Input.MixedRealitySpeechCommandsProfile
     - Microsoft.MixedReality.Toolkit.MixedRealityCameraProfile
@@ -199,8 +219,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2392}
     - Class: 114
-      Script: {instanceID: 2616}
-    - Class: 114
       Script: {instanceID: 2630}
     - Class: 114
       Script: {instanceID: 2634}
@@ -281,6 +299,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5574}
     - Class: 114
+      Script: {instanceID: 5684}
+    - Class: 114
       Script: {instanceID: 5694}
     - Class: 114
       Script: {instanceID: 5800}
@@ -310,6 +330,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6614}
     - Class: 114
       Script: {instanceID: 6638}
+    - Class: 114
+      Script: {instanceID: 6742}
     - Class: 114
       Script: {instanceID: 6796}
     - Class: 114
